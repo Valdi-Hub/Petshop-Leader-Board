@@ -1,0 +1,253 @@
+{
+  "users": [
+    {
+      "id": "usr-admin",
+      "username": "adminerapet",
+      "passwordHash": "$2b$10$rwoG0skTOxhfrkXTKhyG8eeU5DI.TluP9fJGmzXJIgd0uLXMFEbY6",
+      "role": "admin"
+    },
+    {
+      "id": "usr-ps1",
+      "username": "caringpaws",
+      "passwordHash": "$2b$10$lD0g8wb2Gm3HDFlgURL0aumStRo0NI0ARogjt8bbdmysey7sxeg3y",
+      "role": "petshop"
+    },
+    {
+      "id": "usr-ps2",
+      "username": "meowpet",
+      "passwordHash": "$2b$10$lD0g8wb2Gm3HDFlgURL0au/cz3Rs2vr9jMM8DhvJ39hHYcYSAZEJ.",
+      "role": "petshop"
+    },
+    {
+      "id": "usr-ps3",
+      "username": "happytail",
+      "passwordHash": "$2b$10$lD0g8wb2Gm3HDFlgURL0auyRofkM5VMo9CmU0285mBvfXuR2tAmF.",
+      "role": "petshop"
+    },
+    {
+      "id": "usr-ps4",
+      "username": "groominghouse",
+      "passwordHash": "$2b$10$lD0g8wb2Gm3HDFlgURL0auwuZC.ag/vtAnDlJrxsrBy0MAPLYOu8a",
+      "role": "petshop"
+    },
+    {
+      "id": "usr-ps5",
+      "username": "healthypets",
+      "passwordHash": "$2b$10$lD0g8wb2Gm3HDFlgURL0au/PmDfKE3o.Nj9S8g3quaLBc1Rgzzz4a",
+      "role": "petshop"
+    },
+    {
+      "id": "usr-fxt5rar",
+      "username": "rayleen",
+      "passwordHash": "$2b$10$7R32//vbZid/J0azWmU8hevZxbz9vwa18UCI9TSoLY7L8N1xeuR9y",
+      "role": "petshop"
+    }
+  ],
+  "petshops": [
+    {
+      "id": "ps-1",
+      "userId": "usr-ps1",
+      "namaPetshop": "Caring Paws Petshop",
+      "namaPemilik": "Ahmad Prasetyo",
+      "email": "ahmad@caringpaws.com",
+      "telepon": "081234567890",
+      "alamat": "Jl. Merdeka No. 12, Jakarta",
+      "status": "aktif",
+      "createdAt": "2026-01-10T10:00:00.000Z",
+      "totalPoints": 1500,
+      "lastPointUpdateAt": "2026-07-02T15:30:00.000Z"
+    },
+    {
+      "id": "ps-2",
+      "userId": "usr-ps2",
+      "namaPetshop": "Meow Pet Shop & Clinic",
+      "namaPemilik": "Siti Rahmawati",
+      "email": "siti@meowpet.com",
+      "telepon": "082345678901",
+      "alamat": "Jl. Sudirman No. 45, Bandung",
+      "status": "aktif",
+      "createdAt": "2026-01-15T11:00:00.000Z",
+      "totalPoints": 2100,
+      "lastPointUpdateAt": "2026-07-05T09:15:00.000Z"
+    },
+    {
+      "id": "ps-3",
+      "userId": "usr-ps3",
+      "namaPetshop": "Happy Tail Pet Care",
+      "namaPemilik": "Budi Santoso",
+      "email": "budi@happytail.com",
+      "telepon": "083456789012",
+      "alamat": "Jl. Diponegoro No. 88, Surabaya",
+      "status": "aktif",
+      "createdAt": "2026-02-01T09:30:00.000Z",
+      "totalPoints": 950,
+      "lastPointUpdateAt": "2026-06-28T14:20:00.000Z"
+    },
+    {
+      "id": "ps-4",
+      "userId": "usr-ps4",
+      "namaPetshop": "Grooming House Specialist",
+      "namaPemilik": "Dewi Lestari",
+      "email": "dewi@groominghouse.com",
+      "telepon": "084567890123",
+      "alamat": "Jl. Gajah Mada No. 101, Yogyakarta",
+      "status": "aktif",
+      "createdAt": "2026-02-10T14:15:00.000Z",
+      "totalPoints": 1200,
+      "lastPointUpdateAt": "2026-07-01T11:00:00.000Z"
+    },
+    {
+      "id": "ps-5",
+      "userId": "usr-ps5",
+      "namaPetshop": "Healthy Pets & Feed",
+      "namaPemilik": "Eko Wijaya",
+      "email": "eko@healthypets.com",
+      "telepon": "085678901234",
+      "alamat": "Jl. Pemuda No. 7, Semarang",
+      "status": "aktif",
+      "createdAt": "2026-03-05T08:00:00.000Z",
+      "totalPoints": 1800,
+      "lastPointUpdateAt": "2026-07-04T16:45:00.000Z"
+    },
+    {
+      "id": "ps-s8kiogt",
+      "userId": "usr-fxt5rar",
+      "namaPetshop": "Petshop Rayleen contoh",
+      "namaPemilik": "rayleen",
+      "email": "rayleen@gmail.com",
+      "telepon": "08152659855",
+      "alamat": "",
+      "status": "aktif",
+      "createdAt": "2026-07-07T10:51:52.588Z",
+      "totalPoints": 10000,
+      "lastPointUpdateAt": "2026-07-07T10:52:22.485Z"
+    }
+  ],
+  "pointLogs": [
+    {
+      "id": "log-1",
+      "petshopId": "ps-1",
+      "petshopName": "Caring Paws Petshop",
+      "adminId": "usr-admin",
+      "adminName": "Administrator",
+      "point": 500,
+      "tipe": "tambah",
+      "keterangan": "Poin awal pendaftaran petshop",
+      "totalPointAfter": 500,
+      "createdAt": "2026-01-10T10:30:00.000Z"
+    },
+    {
+      "id": "log-2",
+      "petshopId": "ps-1",
+      "petshopName": "Caring Paws Petshop",
+      "adminId": "usr-admin",
+      "adminName": "Administrator",
+      "point": 1000,
+      "tipe": "tambah",
+      "keterangan": "Sponsorship event pet festival",
+      "totalPointAfter": 1500,
+      "createdAt": "2026-07-02T15:30:00.000Z"
+    },
+    {
+      "id": "log-3",
+      "petshopId": "ps-2",
+      "petshopName": "Meow Pet Shop & Clinic",
+      "adminId": "usr-admin",
+      "adminName": "Administrator",
+      "point": 800,
+      "tipe": "tambah",
+      "keterangan": "Poin pendaftaran & kelengkapan profil",
+      "totalPointAfter": 800,
+      "createdAt": "2026-01-15T12:00:00.000Z"
+    },
+    {
+      "id": "log-4",
+      "petshopId": "ps-2",
+      "petshopName": "Meow Pet Shop & Clinic",
+      "adminId": "usr-admin",
+      "adminName": "Administrator",
+      "point": 1300,
+      "tipe": "tambah",
+      "keterangan": "Pencapaian penjualan pakan terbanyak Q1",
+      "totalPointAfter": 2100,
+      "createdAt": "2026-07-05T09:15:00.000Z"
+    },
+    {
+      "id": "log-5",
+      "petshopId": "ps-3",
+      "petshopName": "Happy Tail Pet Care",
+      "adminId": "usr-admin",
+      "adminName": "Administrator",
+      "point": 600,
+      "tipe": "tambah",
+      "keterangan": "Poin registrasi",
+      "totalPointAfter": 600,
+      "createdAt": "2026-02-01T10:00:00.000Z"
+    },
+    {
+      "id": "log-6",
+      "petshopId": "ps-3",
+      "petshopName": "Happy Tail Pet Care",
+      "adminId": "usr-admin",
+      "adminName": "Administrator",
+      "point": 350,
+      "tipe": "tambah",
+      "keterangan": "Mengikuti seminar kesehatan hewan",
+      "totalPointAfter": 950,
+      "createdAt": "2026-06-28T14:20:00.000Z"
+    },
+    {
+      "id": "log-7",
+      "petshopId": "ps-4",
+      "petshopName": "Grooming House Specialist",
+      "adminId": "usr-admin",
+      "adminName": "Administrator",
+      "point": 1200,
+      "tipe": "tambah",
+      "keterangan": "Juara 1 Lomba Grooming Nasional 2026",
+      "totalPointAfter": 1200,
+      "createdAt": "2026-07-01T11:00:00.000Z"
+    },
+    {
+      "id": "log-8",
+      "petshopId": "ps-5",
+      "petshopName": "Healthy Pets & Feed",
+      "adminId": "usr-admin",
+      "adminName": "Administrator",
+      "point": 1000,
+      "tipe": "tambah",
+      "keterangan": "Registrasi outlet cabang baru",
+      "totalPointAfter": 1000,
+      "createdAt": "2026-03-05T09:00:00.000Z"
+    },
+    {
+      "id": "log-9",
+      "petshopId": "ps-5",
+      "petshopName": "Healthy Pets & Feed",
+      "adminId": "usr-admin",
+      "adminName": "Administrator",
+      "point": 800,
+      "tipe": "tambah",
+      "keterangan": "Kontribusi kampanye adopsi kucing",
+      "totalPointAfter": 1800,
+      "createdAt": "2026-07-04T16:45:00.000Z"
+    },
+    {
+      "id": "log-str0efg",
+      "petshopId": "ps-s8kiogt",
+      "petshopName": "Petshop Rayleen contoh",
+      "adminId": "usr-admin",
+      "adminName": "adminerapet",
+      "point": 10000,
+      "tipe": "tambah",
+      "keterangan": "costumer loyal",
+      "totalPointAfter": 10000,
+      "createdAt": "2026-07-07T10:52:22.485Z"
+    }
+  ],
+  "sessions": [],
+  "settings": {
+    "logoUrl": "",
+    "appName": "Leaderboard Petshop"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Leaderboard Point Petshop",
+  "description": "Sistem Leaderboard Point Petshop dengan hak akses Admin dan Petshop, manajemen CRUD, penambahan poin, log audit transaksi, serta visualisasi chart performa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,461 @@
+/* ==========================================================================
+   PORTAL LEADERBOARD PETSHOP - SYSTEM UI STYLE SHEET
+   Visual Studio & VS Code Compatible CSS file
+   ========================================================================== */
+
+/* 1. Core Fonts & Variables */
+:root {
+  --color-primary: #244e42;       /* Forest Green */
+  --color-primary-dark: #16332b;  /* Dark Pine Green */
+  --color-primary-light: #f0f7f5; /* Light Mint Green Tint */
+  --color-accent: #f59e0b;        /* Amber 500 */
+  --color-accent-dark: #d97706;   /* Amber 600 */
+  --color-accent-light: #fef3c7;  /* Amber 100 */
+  --color-slate-bg: #f8fafc;      /* Slate 50 */
+  --color-slate-border: #f1f5f9;  /* Slate 100 */
+  --color-text-main: #0f172a;     /* Slate 900 */
+  --color-text-muted: #64748b;    /* Slate 500 */
+  --color-text-sub: #475569;      /* Slate 600 */
+}
+
+/* 2. Page & Layout Components */
+.app-viewport-layout {
+  min-height: 100vh;
+  background-color: var(--color-slate-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .app-viewport-layout {
+    flex-direction: row;
+  }
+}
+
+/* 3. Sidebar Navigation Styles */
+.sidebar-panel {
+  width: 16rem; /* 64 (w-64) */
+  background-color: #0f172a; /* Slate 900 */
+  color: #cbd5e1; /* Slate 300 */
+  border-right: 1px solid #1e293b; /* Slate 800 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+  transition: transform 300ms ease-in-out;
+}
+
+.sidebar-branding {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(30, 41, 59, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sidebar-branding-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: var(--color-primary);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
+}
+
+.sidebar-nav-list {
+  flex: 1 1 0%;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.sidebar-nav-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: all 150ms ease;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar-nav-item-active {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
+}
+
+.sidebar-nav-item-inactive {
+  color: #94a3b8;
+}
+.sidebar-nav-item-inactive:hover {
+  color: #f1f5f9;
+  background-color: rgba(30, 41, 59, 0.4);
+}
+
+.sidebar-footer-info {
+  padding: 1rem;
+  border-top: 1px solid rgba(30, 41, 59, 0.6);
+  background-color: rgba(15, 23, 42, 0.2);
+}
+
+/* 4. Auth & Login View Styles */
+.login-screen-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-slate-bg);
+  padding: 3rem 1rem;
+}
+
+.login-form-card {
+  max-width: 28rem;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--color-slate-border);
+}
+
+.login-logo-badge {
+  margin-left: auto;
+  margin-right: auto;
+  height: 4rem;
+  width: 4rem;
+  background-color: var(--color-primary);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
+}
+
+/* 5. Custom Card Components */
+.card-ui-base {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-slate-border);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.card-ui-banner {
+  background: linear-gradient(135deg, #16332b, #244e42, #0d1f1b);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(36, 78, 66, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-ui-stat-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-ui-icon-box {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* 6. Form Element Styles */
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-input-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-sub);
+}
+
+.form-text-input {
+  display: block;
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-main);
+  background-color: #ffffff;
+  transition: all 150ms ease;
+}
+.form-text-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  border-color: var(--color-primary);
+}
+
+.form-select-input {
+  display: block;
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-main);
+  background-color: #ffffff;
+  transition: all 150ms ease;
+  cursor: pointer;
+}
+.form-select-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  border-color: var(--color-primary);
+}
+
+/* 7. Action Button Styles */
+.btn-ui-primary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  background-color: var(--color-primary);
+  border: none;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+.btn-ui-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+.btn-ui-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-ui-secondary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  color: var(--color-text-sub);
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+.btn-ui-secondary:hover {
+  background-color: #f8fafc;
+}
+
+.btn-ui-danger {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  background-color: #dc2626;
+  border: none;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+.btn-ui-danger:hover {
+  background-color: #b91c1c;
+}
+
+/* 8. Table Custom Design */
+.custom-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 1rem;
+  border: 1px solid var(--color-slate-border);
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.custom-table-head {
+  background-color: #f8fafc;
+}
+
+.custom-table-head-cell {
+  padding: 1rem 1.5rem;
+  font-size: 0.625rem; /* 10px */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-slate-border);
+}
+
+.custom-table-row {
+  transition: background-color 150ms ease;
+}
+.custom-table-row:hover {
+  background-color: rgba(248, 250, 252, 0.5);
+}
+
+.custom-table-cell {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--color-slate-border);
+  font-size: 0.875rem;
+}
+
+/* 9. Badge Design System */
+.ui-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.625rem; /* 10px */
+  font-weight: 700;
+  border-radius: 0.375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ui-badge-emerald {
+  background-color: #ecfdf5;
+  color: #047857;
+  border: 1px solid #d1fae5;
+}
+
+.ui-badge-rose {
+  background-color: #fff1f2;
+  color: #be123c;
+  border: 1px solid #ffe4e6;
+}
+
+.ui-badge-amber {
+  background-color: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.ui-badge-blue {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #dbeafe;
+}
+
+/* 10. Leaderboard Podium Visualization */
+.podium-container {
+  display: grid;
+  grid-template-cols: 1fr;
+  gap: 1.5rem;
+  align-items: end;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .podium-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.podium-card-silver {
+  background-color: #ffffff;
+  border: 1px solid var(--color-slate-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 14rem;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.podium-card-gold {
+  background: linear-gradient(to bottom right, #fffbeb, rgba(254, 243, 199, 0.3));
+  border: 2px solid #fde68a;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(251, 191, 36, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 16rem;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.podium-card-bronze {
+  background-color: #ffffff;
+  border: 1px solid var(--color-slate-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 13rem;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.podium-rank-badge {
+  position: absolute;
+  top: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: monospace;
+  font-size: 0.875rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.podium-rank-gold {
+  background-color: #f59e0b;
+  color: #ffffff;
+  border: 4px solid #fde68a;
+}
+
+.podium-rank-silver {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 2px solid #e2e8f0;
+}
+
+.podium-rank-bronze {
+  background-color: #fff7ed;
+  color: #c2410c;
+  border: 2px solid #ffedd5;
+}
